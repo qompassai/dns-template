@@ -1,0 +1,9 @@
+// named.conf.example — BIND starter. Docs: https://bind9.readthedocs.io/
+options {
+    directory "/var/named";
+    recursion yes;
+};
+zone "example.com" {
+    type primary;
+    file "db.example.com";
+};
